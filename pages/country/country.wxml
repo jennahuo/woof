@@ -1,0 +1,25 @@
+<view class="page__container">
+  
+  <view class="image"></view>
+  <view class="select_box">Hello, USA</view>
+
+  <!-- confirmed cases -->
+  <view class="container">
+    <view class="name">TOTAL CONFIRMED </view>
+    <view class="data">{{results.cases}}</view>
+  </view>
+
+  <!-- cured cases -->
+  <view class="container">
+    <view class="name">TOTAL DEATH </view>
+    <view class="data">{{results.deaths}}</view>
+  </view>
+
+  <!-- deceased cases -->
+  <view class="container">
+    <view class="name">TOTAL RECOVERED </view>
+    <view class="data">{{results.recovered}}</view>
+  </view>
+
+  <button bindtap="fetchData" class="btn">FETCH DATA</button>
+</view>
